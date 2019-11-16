@@ -14,6 +14,7 @@ class Application(flowpipe.INode):
         flowpipe.OutputPlug('output', self)
 
     def compute(self, **args):
+        # Echo the input back as the output.
         return { 'output' : args['input'] }
 
 
