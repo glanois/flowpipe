@@ -22,8 +22,8 @@ class TcpServer:
     """ TCP/IP server.
         Example usage:
 
-        t = TcpServer('localhost', 51001)
-        t.bind()
+        t = TcpServer()
+        t.bind('localhost', 51001)
         while True:
             t.accept()
             while True:
